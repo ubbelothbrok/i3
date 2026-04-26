@@ -259,12 +259,13 @@ exec_always --no-startup-id ~/.config//polybar/launch.sh
 # exec --no-startup-id code
 # exec --no-startup-id firefox
 # exec --no-startup-id google-chrome
-# exec --no-startup-id brightness-controller
+exec --no-startup-id brightness-controller
 
 
 exec --no-startup-id numlockx on
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id xinput set-prop "SYNA7DB5:01 06CB:CD41 Touchpad" "libinput Natural Scrolling Enabled" 1
+exec --no-startup-id xinput set-prop "SYNA7DB5:01 06CB:CD41 Touchpad" "libinput Tapping Enabled" 1
 exec --no-startup-id dunst
 
 exec_always --no-startup-id "xrandr --output HDMI-1-0 --mode 1920x1080 --rate 74.97"
