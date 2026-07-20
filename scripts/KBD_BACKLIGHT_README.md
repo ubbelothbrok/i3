@@ -2,17 +2,6 @@
 
 This guide explains how to control and customize your Acer Nitro's RGB keyboard backlight in i3wm. A custom control script and i3 keybindings have been set up for you.
 
-## ⌨️ i3 Keybindings
-You can control the keyboard directly using these shortcuts:
-
-| Shortcut | Action | Description |
-|---|---|---|
-| `Alt` + `Ctrl` + `m` | **Cycle Modes** | Cycles through all available effects (Static ➔ Breath ➔ Neon ➔ Wave ➔ Shifting ➔ Zoom). |
-| `Alt` + `Ctrl` + `Space` | **Toggle Power** | Turns the backlight ON or OFF. It remembers your last used mode! |
-| `Alt` + `Ctrl` + `Up` | **Brightness Up** | Increases backlight brightness by 20%. |
-| `Alt` + `Ctrl` + `Down` | **Brightness Down** | Decreases backlight brightness by 20%. |
-
----
 
 ## 💻 Command-Line Interface (CLI)
 Behind the scenes, the shortcuts run a helper script located at `~/.config/i3/scripts/kbd-backlight.sh`. 

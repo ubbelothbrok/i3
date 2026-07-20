@@ -61,11 +61,7 @@ bindsym XF86PowerOff exec --no-startup-id systemctl suspend
 bindsym $mod+Ctrl+Right exec --no-startup-id ~/.config/i3/brightness.sh up
 bindsym $mod+Ctrl+Left exec --no-startup-id ~/.config/i3/brightness.sh down
 
-# Keyboard backlight controls (Acer Nitro)
-bindsym $mod+Ctrl+Up exec --no-startup-id ~/.config/i3/scripts/kbd-backlight.sh up
-bindsym $mod+Ctrl+Down exec --no-startup-id ~/.config/i3/scripts/kbd-backlight.sh down
-bindsym $mod+Ctrl+space exec --no-startup-id ~/.config/i3/scripts/kbd-backlight.sh toggle
-bindsym $mod+Ctrl+m exec --no-startup-id ~/.config/i3/scripts/kbd-backlight.sh cycle
+
 # Media player controls
 bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
 bindsym XF86AudioPause exec --no-startup-id playerctl play-pause
