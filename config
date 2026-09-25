@@ -188,11 +188,11 @@ bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
-bindsym $mod+Shift+o exec --no-startup-id xrandr --output eDP-1 --auto
-bindsym $mod+Shift+p exec --no-startup-id xrandr --output eDP-1 --off
+bindsym $mod+Shift+o exec --no-startup-id xrandr --output eDP --auto
+bindsym $mod+Shift+p exec --no-startup-id xrandr --output eDP --off
 
-bindsym $mod+Shift+m exec --no-startup-id xrandr --output HDMI-1-0 --mode 1920x1080 --same-as eDP-1
-bindsym $mod+Shift+n exec --no-startup-id xrandr --output HDMI-1-0 --mode 1920x1080 --left-of eDP-1
+bindsym $mod+Shift+m exec --no-startup-id xrandr --output eDP --auto --output HDMI-1-0 --mode 1920x1080 --same-as eDP
+bindsym $mod+Shift+n exec --no-startup-id xrandr --output eDP --auto --output HDMI-1-0 --mode 1920x1080 --right-of eDP
 
 
 
@@ -281,3 +281,6 @@ exec --no-startup-id dunst
 
 # Reset screen brightness to full on startup (prevent black screen from stale xrandr state)
 exec_always --no-startup-id xrandr --output eDP-1 --brightness 1.0
+
+
+exec_always --no-startup-id xrandr --output eDP --auto --output HDMI-1-1 --mode 1920x1080 --right-of eDP
